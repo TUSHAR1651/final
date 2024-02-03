@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scaler Social</title>
+    <style>
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: white;
+          padding: 10px 20px; /* Added padding for spacing */
+        }
+        .left-image {
+          margin-right: 20px; /* Margin on the right for spacing */
+        }
+        .right-image {
+          margin-left: 20px; /* Margin on the left for spacing */
+        }
+        .navbar img {
+          max-height: 50px;
+        }
+        .line {
+          border: none;
+          height: 1px;
+          background: #2a2424;
+          background: linear-gradient(to center, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+          opacity: 15%;
+        }
+        .main{
+            display: flex;
+        }
+        .post-box{
+            height: 100%;
+            background-color: whitesmoke;
+            width: 75%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #content{
+            border-style: none;
+        }
+
+        .post-upper{
+            display: flex;
+            flex-direction: column;
+        }
+        .lower{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .post-btn{
+            /* font-family: 'Poppins', sans-serif; */
+            border-radius: 15px;
+            padding: 5px;
+            width: 60px;
+            color: white;
+            border-style: none;
+            background-color: rgb(66, 66, 248);
+        }
+        .chat-area{
+            padding-left: 20px;
+            width: 25%;
+        }
+    
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        /* body{
+            /* font-family: 'Poppins', sans-serif; */
+        .like{
+            
+        }
+      </style>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img class="left-image" src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/033/original/SST_Logo.png?1706888781" alt="Left Image">
+            <img class="right-image" src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/032/original/scaler-social.png?1706888764" alt="Right Image">
+          </div>
+          <hr class="line">
+    </header>
+    <main>
+        <section class = "main">
+            
+            <section class = "post-box">
+                <h3>Post your thoughts here</h3>
+                <div class="box">
+                    <div class="post-upper">
+                        <div>
+                            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739" alt="#">
+                        </div>
+                        <div>
+                            <textarea name="." id="content" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="lower">
+                        <span><span class="count_of_char">0</span>/100</span>
+                        <button class="post-btn">Post</button>
+                    </div>
+                </div>
+            </section>
+    
+            
+            <section class="chatarea">
+                <h3>Your Feed</h3>
+                <div class="posts">
+                    <div class="left">
+                        <div class="prof-img">
+                            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739" alt="#">
+                        </div>
+                        <div class="post-right">
+                            <div class="post-det">
+                                <h4>Name</h4>
+                                <h5>@tushar1651</h5>
+                                <div class="post-right-btns">
+                                    <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/028/original/edit.png?1706888661" alt="#">
+                                    <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/027/original/delete.png?1706888643" alt="#">
+                                </div>
+                            </div>
+                            <div class="post-txt-area">
+                                <textarea name="post" id="post-area-text" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="like-cmnt-btns">
+                                <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/026/original/comment.png?1706888619" class = "comment" alt="#">
+                                <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/029/original/heart.png?1706888679" class ="like" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <!-- Add your JavaScript file here for interactivity -->
+    <script src ="script.js"></script>
+</body>
+</html>
